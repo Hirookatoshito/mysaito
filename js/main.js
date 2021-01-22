@@ -31,7 +31,11 @@
   })
 
   let menu = document.querySelector('.header-nav');
-  let closeText = document.querySelector('.close')
+  let closeText = document.querySelector('.close');
+  let closeList1 = document.getElementById('closelist1');
+  let closeList2 = document.getElementById('closelist2');
+  let closeList3 = document.getElementById('closelist3');
+  let closeList4 = document.getElementById('closelist4');
   let menubar = document.querySelector('.menu-trigger');
   let open = document.querySelector('.open');
   let headerText = document.querySelector('.header-nav-text');
@@ -42,6 +46,26 @@
     headerText.classList.toggle('hide')
   });
   closeText.addEventListener('click', () => {
+    menubar.classList.remove('active');
+    open.classList.remove('show');
+    headerText.classList.remove('hide');
+  })
+  closeList1.addEventListener('click', () => {
+    menubar.classList.remove('active');
+    open.classList.remove('show');
+    headerText.classList.remove('hide');
+  })
+  closeList2.addEventListener('click', () => {
+    menubar.classList.remove('active');
+    open.classList.remove('show');
+    headerText.classList.remove('hide');
+  })
+  closeList3.addEventListener('click', () => {
+    menubar.classList.remove('active');
+    open.classList.remove('show');
+    headerText.classList.remove('hide');
+  })
+  closeList4.addEventListener('click', () => {
     menubar.classList.remove('active');
     open.classList.remove('show');
     headerText.classList.remove('hide');
